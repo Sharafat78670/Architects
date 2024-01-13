@@ -29,7 +29,6 @@
 /* Header style */
 header {
     background-color: rgb(125, 162, 183);
-    height: 1000px;
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
@@ -131,15 +130,18 @@ main {
     padding: 40px;
     gap: 40px;
 }
-.Features-content{
+
+.Features-content {
     width: 50%;
 }
-.Features-content-title{
-    border-left: 5px solid blue;
+
+.Features-content-title {
+    border-left: 7px solid rgb(2, 111, 113);
     padding-left: 24px;
     margin-bottom: 24px;
 }
-.text-box{
+
+.text-box {
     font-size: 1.25rem;
     font-weight: 600;
     color: black;
@@ -147,9 +149,22 @@ main {
 }
 
 .Features-img img {
-    width: 50%;
-    max-height: 400px;
-    
+    width:100%;
+    height: 982px;
+    margin-left: 30px;
+
+}
+
+.year-10 {
+    background-color: rgb(2, 104, 70);
+    position: relative;
+    bottom: 80px;
+    right: 50px;
+    text-align: center;
+    padding: 40px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
 }
 
 
@@ -184,5 +199,17 @@ main {
 
     .team-content {
         margin-top: 20px;
+    }
+    .Features-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Features-content {
+        width: 80%;
+        padding: 20px;
+    }
+    .Features-img img {
+        width: 80%;
+        height: 450px;
     }
 }
