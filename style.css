@@ -28,7 +28,7 @@
 
 /* Header style */
 header {
-    background-color: rgb(125, 162, 183);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
@@ -38,10 +38,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+
+   
+}
+nav> h3{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 nav ul {
     display: flex;
+    
 }
 
 nav li {
@@ -167,42 +174,145 @@ main {
     color: white;
 }
 
+/* Some section */
+.some-box{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+.some-text{
+    width: 540px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.some-text h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom:20px;
+}
+.some-box-content{
+    text-align: center;
+    border: 3px solid rgb(2, 104, 70) ;
+    width: 242px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(2, 104, 70);
+    color: white;
+}
+.some-box-content h3{
+    margin: 10px 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Sponsors section */
+.Sponsors-text{
+    text-align: center;
+    width: 40%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.Sponsors-text h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+/* Footer section */
+
+
+hr {
+    margin: 0 140px;
+    color: rgb(48, 50, 49);
+}
+
+.footer {
+    background: #013030;
+    max-width: 100%;
+}
+
+.footer-h {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 120px 140px 50px 140px;
+    text-align: center;
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.num img {
+    width: 24px;
+    height: 24px;
+}
+
+.site {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.site img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-m {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px;
+}
+
+.footer-l {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 140px 50px 140px;
+    color: aliceblue;
+}
+
 
 @media screen and (max-width:576px) {
     nav {
         flex-direction: column;
         padding: 20px;
     }
-
     nav ul {
         margin: 10px 0;
     }
-
     .header-title-text {
         font-weight: 700;
         font-size: 3rem;
     }
-
     .primary-button {
         padding: 10px 15px;
     }
-
     .team {
         flex-direction: column;
     }
-
     .team-img-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-
     .team-content {
         margin-top: 20px;
     }
     .Features-container{
         flex-direction: column;
         width: 100%;
+        padding: 0;
     }
     .Features-content {
         width: 80%;
@@ -211,5 +321,31 @@ main {
     .Features-img img {
         width: 80%;
         height: 450px;
+    }
+    .some-text , .Sponsors-text{
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .some-box , .sponsors-img-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-h{
+        flex-direction: column;
+        padding: 0;
+    }
+    .foot-text{
+       margin-top: 40px;
+       margin-bottom: 10px;
+    }
+    .nam-site{
+       margin-left: 25%;
+       margin-bottom: 20px;
+    }
+    .footer-l{
+        padding: 20px;
+
     }
 }
