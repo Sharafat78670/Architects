@@ -19,11 +19,19 @@
     cursor: pointer;
 }
 
+.primary-text {
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
 /* Header style */
 header {
-    background-color: rgb(65, 185, 254);
-    height:100%;
+    background-color: rgb(125, 162, 183);
+    height: 1000px;
     width: 100%;
+    border-radius: 0 0 10px 10px;
 }
 
 nav {
@@ -72,47 +80,77 @@ nav li a {
     width: 100%;
     margin-top: 20px;
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.team{
+
+.team {
     display: flex;
     margin-top: 30px;
     align-items: center;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     padding: 20px;
 }
-.team-content{
-padding:0 50px ;
+
+.team-content {
+    padding: 0 50px;
 }
-.team-content-taitle{
+
+.team-content-taitle {
     font-size: 2.7rem;
     margin-bottom: 20px;
 }
-.team-content-taitle .quick{
+
+.team-content-taitle .quick {
     color: gray;
     font-weight: 500;
 }
-.team-content-taitle .of{
+
+.team-content-taitle .of {
     color: black;
     font-weight: 700;
 }
-.team-content-taitle .features{
+
+.team-content-taitle .features {
     color: rgb(2, 83, 84);
     font-weight: 700;
 }
-.team-content-description{
-    color: var(--Dark-03, #727272);
-font-size: 1rem;
-font-weight: 400;
-margin-bottom: 25px;
+
+/* Feature section */
+.Features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+.Features-content{
+    width: 50%;
+}
+.Features-content-title{
+    border-left: 5px solid blue;
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+.text-box{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
 }
 
+.Features-img img {
+    width: 50%;
+    max-height: 400px;
+    
+}
 
 
 @media screen and (max-width:576px) {
@@ -120,25 +158,31 @@ margin-bottom: 25px;
         flex-direction: column;
         padding: 20px;
     }
-    nav ul{
+
+    nav ul {
         margin: 10px 0;
     }
+
     .header-title-text {
         font-weight: 700;
         font-size: 3rem;
     }
+
     .primary-button {
         padding: 10px 15px;
     }
-    .team{
+
+    .team {
         flex-direction: column;
     }
-    .team-img-container{
+
+    .team-img-container {
         display: grid;
-        grid-template-columns: repeat(1 ,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-    .team-content{
+
+    .team-content {
         margin-top: 20px;
-        }
+    }
 }
